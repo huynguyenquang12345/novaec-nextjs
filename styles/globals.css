@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../assets/fonts/SanFranciscoDisplay-Bold.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/SanFranciscoDisplay-Black.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Black.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/SanFranciscoDisplay-Heavy.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Heavy.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/SanFranciscoDisplay-Medium.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/SanFranciscoDisplay-Light.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Light.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/SanFranciscoDisplay-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/SanFranciscoDisplay-Semibold.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../assets/fonts/SanFranciscoDisplay-Thin.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'San Francisco Display';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../assets/fonts/SanFranciscoDisplay-Ultralight.woff2') format('woff2'),
+        url('../assets/fonts/SanFranciscoDisplay-Ultralight.woff') format('woff');
+}
+
+* {
+    font-family: 'San Francisco Display';
+}

@@ -1,16 +1,17 @@
+const path = require('path');
+
 module.exports = {
   stories: ["../**/*.stories.mdx", "../**/*.stories.@(js|jsx|ts|tsx)"],
+  framework: '@storybook/react',
+  staticDirs: ['../public'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app",
-    "@storybook/addon-viewport",
-    '@whitespace/storybook-addon-html',
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
     {
-      name: "@storybook/addon-postcss",
+      name: '@storybook/addon-postcss',
       options: {
         postcssLoaderOptions: {
-          implementation: require("postcss"),
+          implementation: require('postcss'),
         },
       },
     },
@@ -18,5 +19,12 @@ module.exports = {
   typescript: {
     reactDocgen: 'none'
   },
+  webpackFinal: async (config) => {
+    config.resolve.modules = [
+      path.resolve(__dirname, ".."),
+      "node_modules",
+    ]
 
+    return config;
+  }
 };
