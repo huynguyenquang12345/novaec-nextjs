@@ -33,7 +33,10 @@ export const Normal: Story = () => {
         { label: "Gioi thieu", href: "#" },
         { label: "Linh vuc hoat dong", href: "#" },
         { label: "Du an", href: "#" },
-        { label: "Tin tuc", href: "#" },
+        { label: "Tin tuc", href: "#", subLinks: [
+          { label: "Tin tuc cong ty", href: "#" },
+          { label: "Tin tuc Novagroup", href: "#" },
+        ] },
         { label: "Tuyen dung", href: "#" },
         { label: "Lien he", href: "#" },
       ]}

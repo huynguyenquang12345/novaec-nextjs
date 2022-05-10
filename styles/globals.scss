@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 @font-face {
     font-display: swap;
@@ -85,4 +87,45 @@
 
 * {
     font-family: 'San Francisco Display';
+}
+
+@function rem($pixel) {
+    @if not $pixel {
+        @error 'Missing argument $pixel';
+    }
+
+    @return ($pixel/16)+rem;
+}
+
+
+$dark-cerulean: rgb(25, 64, 112);
+$gainsboro: rgb(217, 217, 217);
+$white-smoke: rgb(245, 245, 245);
+
+@mixin scroll-bars($size: 12,
+    $thumbColor: $dark-cerulean,
+    $trackColor: $gainsboro,
+    $border-radius-thumb: 0,
+    $border-thumb: 2) {
+    &::-webkit-scrollbar {
+        height: rem($size);
+        margin-right: rem(10);
+        width: rem($size);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumbColor;
+        border-radius: rem($border-radius-thumb);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $gainsboro;
+    }
+
+    scrollbar-face-color: $white-smoke;
+    scrollbar-track-color: $white-smoke;
+}
+
+.o-bannerContent_scrollbar {
+    @include scroll-bars(3);
 }
